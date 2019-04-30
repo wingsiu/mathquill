@@ -2051,7 +2051,7 @@ var latexMathParser = (function() {
      
       var cmdKlass = LatexCmds[ctrlSeq];
   //by alpha
-   // console.log("latexMath:", ctrlSeq);
+    console.log("latexMath:", ctrlSeq);
   //by alpha
 
       if (cmdKlass) {
@@ -5647,6 +5647,10 @@ Environments.matrix = P(Environment, function(_, super_) {
 
 Environments.cases = P(Matrix, function(_, super_) {
   _.environment = 'cases';
+  _.parentheses = {
+    left: '{',
+    right: ''
+  };
   _.createBlocks = function() {
     this.blocks = [
       MatrixCell(0, this),

@@ -5,7 +5,7 @@
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mathquill/mathquill.git"
+    "url": "https://github.com/wingsiu/mathquill.git"
   },
   "files": [
     "build/mathquill.{css,js,min.js}",

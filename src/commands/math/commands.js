@@ -1344,6 +1344,10 @@ Environments.matrix = P(Environment, function(_, super_) {
 
 Environments.cases = P(Matrix, function(_, super_) {
   _.environment = 'cases';
+  _.parentheses = {
+    left: '{',
+    right: ''
+  };
   _.createBlocks = function() {
     this.blocks = [
       MatrixCell(0, this),
